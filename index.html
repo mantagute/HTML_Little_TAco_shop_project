@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Mantagute">
         <meta name="description" content="Little Taco Shop Project">
         <title>LTS</title>
@@ -11,31 +12,33 @@
     </head>
 
     <body>
-        <header>
-            <h1>Welcome to The Little Taco Shop</h1>
-            <nav aria-label="index">
-                <ul>
+        <header class="header">
+            <h1 class="header_h1">Welcome to The Little Taco Shop</h1>
+            <nav aria-label="index" class="header_nav">
+                <ul class="header_ul">
                     <li>
-                        <a href="#about">About LTS</a>
+                        <a href="#menu">Menu</a>
                     </li>
                     <li>
-                        <a href="#menu">Our Menu</a>
+                        <a href="hours.html">Hours</a>
                     </li>
                     <li>
-                        <a href="hours.html">Store Hours</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="about.html">About</a>
                     </li>
                 </ul>
             </nav>
-            <figure>
-                <img src="img/tacos_and_drink_400x267.png" alt="Tacos and Drink" width="400" height="267">
-                <figcaption>Tacos and a Drink</figcaption>
-            </figure>
         </header>
 
-        <hr>
+        <section class="hero">
+            <h2 class="hero_h2">Bienvenidos!</h2>
+            <figure>
+                <img src="img/tacos_and_drink_1000x667.png" alt="Tacos and Drink" width="1000" height="667">
+                <figcaption class="offscreen">Tacos and a Drink</figcaption>
+            </figure>
+        </section>
 
         <main>
             <article id="about">
