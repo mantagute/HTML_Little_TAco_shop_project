@@ -214,4 +214,12 @@ a:active {
     min-height: calc(100vh - 50rem);
 }
 
-/* MAIN */
+/* ABOUT */
+
+.about_trivia {
+    margin: var(--MARGIN);
+}
+
+.about_trivia-answer {
+    margin-top: 1em;
+}
