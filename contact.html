@@ -12,7 +12,7 @@
 
     <body>
         <header class="header">
-            <h1 class="header_h1">Contact Us</h1>
+            <h1 class="header_h1">Contact US - LTS</h1>
             <nav aria-label="index" class="header_nav">
                 <ul class="header_ul">
                     <li>
@@ -51,25 +51,25 @@
                     <a href="#">Back to Top</a>
                 </p>
             </article>
-            <article id="contact" class="main_article">
-                <h2>Our Contact Form</h2>
-                <form action="https://httpbin.org/get" method="get">
-                    <fieldset>
-                        <legend>Send Us a Message</legend>
-                        <p>
-                            <label for="fullName">Name:</label>
-                            <input type="text" name="fullName" id="fullName" placeholder="your full name" autocomplete="on" required>
+            <article id="contact" class="main_article contact">
+                <h2 class="contact_h2">Our Contact Form</h2>
+                <form action="https://httpbin.org/get" method="get" class="contact_form">
+                    <fieldset class="contact_fieldset">
+                        <legend class="offscreen">Send Us a Message</legend>
+                        <p class="contact_p">
+                            <label for="fullName" class="contact_label">Name:</label>
+                            <input class="contact_input" type="text" name="fullName" id="fullName" placeholder="your full name" autocomplete="on" required>
                         </p>
-                        <p>
-                            <label for="email">Email:</label>
-                            <input type="email" name="email" id="email" placeholder="your email" autocomplete="on" required> 
+                        <p class="contact_p">
+                            <label for="email" class="contact_label">Email:</label>
+                            <input class="contact_input" type="email" name="email" id="email" placeholder="your email" autocomplete="on" required> 
                         </p>
-                        <label for="message">Your Message:</label>
+                        <label for="message" class="contact_label">Your Message:</label>
                         <br>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here."></textarea>
+                        <textarea class="contact_textarea" name="message" id="message" cols="30" rows="10" placeholder="Type your message here."></textarea>
                     </fieldset>
-                    <button type="submit">Send</button>
-                    <button type="reset">Reset</button>
+                    <button class="contact_button" type="submit">Send</button>
+                    <button class="contact_button" type="reset">Reset</button>
                 </form>
             </article>
         </main>
