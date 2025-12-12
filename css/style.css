@@ -27,21 +27,22 @@ input, button, textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BG_COLOR: orange;
     --BG_COLOR_FADE: rgb(252, 220, 160);
+    --BG_COLOR: orange;
     --BGIMAGE: linear-gradient(to bottom, var(--BG_COLOR), var(--BG_COLOR_FADE));
     --BODY_BG_COLOR: #fff;
-    --FONT_COLOR: #000;
     --BORDER_COLOR: #333;
-    --HIGHLIGHT_COLOR: rgb(51, 178, 51);
-    --LINK_COLOR: black;
-    --LINK_HOVER: hsla(0, 0%, 0%, 0.6);
-    --LINK_ACTIVE: orange;
+    --BUTTON_COLOR: white;
+    --FONT_COLOR: #000;
     --HEADER_BGCOLOR: black;
     --HEADER_COLOR: white;
-    --NAV_BGCOLOR: white;
     --HERO_BGCOLOR: rgba(51, 178, 51, 0.75);
     --HERO_COLOR:  white;
+    --HIGHLIGHT_COLOR: rgb(51, 178, 51);
+    --LINK_ACTIVE: orange;
+    --LINK_COLOR: black;
+    --LINK_HOVER: hsla(0, 0%, 0%, 0.6);
+    --NAV_BGCOLOR: white;
 
     /* STANDARD PADDING */
 
@@ -58,6 +59,24 @@ input, button, textarea {
     --BORDERS_RADIUS: 15px
 
 
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --BG_COLOR_FADE: gray;
+        --BG_COLOR: black;
+        --BODY_BG_COLOR: #333;
+        --BORDER_COLOR: whitesmoke;
+        --BUTTON_COLOR: black;
+        --FONT_COLOR: whitesmoke;
+        --HEADER_COLOR: whitesmoke;
+        --HERO_COLOR: #333;
+        --HIGHLIGHT_COLOR: whitesmoke;
+        --LINK_ACTIVE: rgb(252, 200, 103);
+        --LINK_COLOR: whitesmoke;
+        --LINK_HOVER: orange;
+        --NAV_BGCOLOR: rgb(20, 20, 20);
+    }
 }
 
 /*  UTILITY CLASSES */
@@ -255,7 +274,8 @@ a:active {
     padding: 0.5em;
     border-radius: var(--BORDERS_RADIUS);
     background-color: var(--HIGHLIGHT_COLOR);
-    color: var(--HEADER_COLOR);
+    color: var(--BUTTON_COLOR);
+    font-weight: bold;
 }
 
 /* MENU */
@@ -322,4 +342,17 @@ thead, th:last-child {
 tfoot td {
     border-bottom-left-radius: var(--BORDERS_RADIUS);
     border-bottom-right-radius: var(--BORDERS_RADIUS);
+}
+
+@media  screen and (min-width: 576px) {
+    .header_h1::before {
+        content: '🌮 ';
+    }
+    .header_h1::after {
+        content: ' 🌮';
+    }
+
+    .menu_header, .menu_cr, .menu_sf, .menu_cs {
+        font-size: 125%;
+    }
 }
